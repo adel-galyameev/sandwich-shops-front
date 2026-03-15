@@ -1,0 +1,335 @@
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #f7c59f;
+  --dark-color: #2d3436;
+  --light-color: #fff;
+  --success-color: #00b894;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: var(--dark-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), #ff8f66);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin: 60px 0 40px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* Advantage Cards */
+.advantage-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-card .icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.advantage-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* Product Cards */
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 20px;
+}
+
+.product-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.product-card .old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.product-card .badge-sale {
+  background-color: var(--success-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Promo Section */
+.promo-section {
+  background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.promo-section h3 {
+  color: var(--dark-color);
+  font-weight: 700;
+}
+
+.promo-badge {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Partner Section */
+.partner-section {
+  background: linear-gradient(135deg, var(--dark-color), #636e72);
+  color: white;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 60px 0;
+}
+
+.partner-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.partner-section .benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.partner-section .benefit-check {
+  color: var(--success-color);
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+/* Buttons */
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e55a2b;
+  border-color: #e55a2b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255,107,53,0.4);
+}
+
+.btn-secondary-custom {
+  background-color: white;
+  border-color: white;
+  color: var(--primary-color);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.btn-partner {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-partner:hover {
+  background-color: #00a383;
+  border-color: #00a383;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0,184,148,0.4);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.7rem;
+  }
+  
+  .partner-section {
+    padding: 30px;
+  }
+  
+  .partner-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Menu Page Styles */
+.menu-header {
+  z-index: 1000;
+}
+
+.menu-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* List view styles */
+.product-card.d-flex {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-card.d-flex img {
+  border-radius: 15px 0 0 15px !important;
+}
+
+.product-card.d-flex .card-body {
+  padding: 20px;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: var(--primary-color);
+  border-color: #dee2e6;
+  margin: 0 2px;
+  border-radius: 8px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.pagination .page-link:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Sidebar styles */
+aside .badge {
+  font-size: 0.75rem;
+}
+
+/* Product Card Modal styles */
+.modal-xl {
+  max-width: 1200px;
+}
+
+/* Tab styles */
+.nav-tabs .nav-link {
+  color: var(--dark-color);
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: var(--secondary-color);
+}
+
+/* Lightbox styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
