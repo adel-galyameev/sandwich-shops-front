@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import MenuPage from './pages/MenuPage';
 import { advantages, popularSandwiches, newUsersPromo, partnerBenefits, franchiseSteps } from './data/mockData';
 
 function App() {
+  const navigate = useNavigate();
   const [showPartnerModal, setShowPartnerModal] = useState(false);
   const [showRegisterModal, setShowRegisterModal] = useState(false);
 
@@ -23,15 +24,15 @@ function App() {
           <h1>🥪 Сэндвич-шопы</h1>
           <p className="lead">Вкусные сэндвичи по всей стране</p>
           <div className="mt-4">
-            <button 
+            <button
               className="btn btn-secondary-custom me-3"
               onClick={handleRegisterClick}
             >
               Зарегистрироваться
             </button>
-            <button 
+            <button
               className="btn btn-light"
-              onClick={() => window.location.href = '/menu'}
+              onClick={() => navigate('/menu')}
             >
               Смотреть меню
             </button>
@@ -164,7 +165,7 @@ function App() {
             <div className="col-md-4 mb-4">
               <h6>Навигация</h6>
               <ul className="list-unstyled">
-                <li><a href="/menu" className="text-decoration-none">Меню</a></li>
+                <li><button onClick={() => navigate('/menu')} className="btn btn-link text-decoration-none">Меню</button></li>
                 <li><a href="#" className="text-decoration-none">Акции</a></li>
                 <li><a href="#" className="text-decoration-none">О нас</a></li>
                 <li><a href="#" className="text-decoration-none">Контакты</a></li>
