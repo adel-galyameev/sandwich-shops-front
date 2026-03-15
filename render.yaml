@@ -3,7 +3,7 @@ services:
     name: sandwich-shops-front
     env: static
     buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
+    staticPublishPath: dist
     headers:
       - path: /*
         name: X-Frame-Options
