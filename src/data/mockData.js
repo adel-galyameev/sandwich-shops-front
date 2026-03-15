@@ -1,5 +1,10 @@
 // Моковые данные для стартовой страницы
 
+// Импорт локальных изображений
+import img1Main from '../images/sandwich-1-main.jpg';
+import img2Main from '../images/sandwich-2-main.jpg';
+import img3Main from '../images/sandwich-3-main.jpg';
+
 export const advantages = [
   {
     id: 1,
@@ -46,7 +51,7 @@ export const popularSandwiches = [
     description: 'Ветчина, салями, моцарелла, томаты, руккола, оливковое масло',
     price: 349,
     oldPrice: 399,
-    image: 'https://picsum.photos/seed/sandwich1/400/300',
+    image: img1Main,
     isSale: true,
     category: 'Популярное'
   },
@@ -56,7 +61,7 @@ export const popularSandwiches = [
     description: 'Куриная грудка, бекон, чеддер, лук, соус BBQ',
     price: 379,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich2/400/300',
+    image: img2Main,
     isSale: false,
     category: 'Популярное'
   },
@@ -66,7 +71,7 @@ export const popularSandwiches = [
     description: 'Тунец, кукуруза, огурцы, сливочный сыр, салат',
     price: 399,
     oldPrice: 449,
-    image: 'https://picsum.photos/seed/sandwich3/400/300',
+    image: img3Main,
     isSale: true,
     category: 'Популярное'
   }
