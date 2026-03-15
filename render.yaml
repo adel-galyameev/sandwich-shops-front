@@ -1,10 +1,9 @@
 services:
   - type: web
     name: sandwich-shops-front
-    env: static
+    env: node
     buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    headers:
-      - path: /*
-        name: X-Frame-Options
-        value: SAMEORIGIN
+    startCommand: npx serve -s dist -l $PORT
+    envVars:
+      - key: NODE_VERSION
+        value: 18
