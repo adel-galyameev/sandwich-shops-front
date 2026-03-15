@@ -1,5 +1,41 @@
 // Моковые данные для страницы меню
 
+// Импорт локальных изображений
+import img1Main from '../images/sandwich-1-main.jpg';
+import img2Main from '../images/sandwich-2-main.jpg';
+import img3Main from '../images/sandwich-3-main.jpg';
+import img4Main from '../images/sandwich-4-main.jpg';
+import img5Main from '../images/sandwich-5-main.jpg';
+import img6Main from '../images/sandwich-6-main.jpg';
+import img7Main from '../images/sandwich-7-main.jpg';
+import img8Main from '../images/sandwich-8-main.jpg';
+import img9Main from '../images/sandwich-9-main.jpg';
+import img10Main from '../images/sandwich-10-main.jpg';
+
+import img1Gallery1 from '../images/sandwich-1-gallery-1.jpg';
+import img1Gallery2 from '../images/sandwich-1-gallery-2.jpg';
+import img1Gallery3 from '../images/sandwich-1-gallery-3.jpg';
+import img2Gallery1 from '../images/sandwich-2-gallery-1.jpg';
+import img2Gallery2 from '../images/sandwich-2-gallery-2.jpg';
+import img3Gallery1 from '../images/sandwich-3-gallery-1.jpg';
+import img3Gallery2 from '../images/sandwich-3-gallery-2.jpg';
+import img3Gallery3 from '../images/sandwich-3-gallery-3.jpg';
+import img4Gallery1 from '../images/sandwich-4-gallery-1.jpg';
+import img4Gallery2 from '../images/sandwich-4-gallery-2.jpg';
+import img5Gallery1 from '../images/sandwich-5-gallery-1.jpg';
+import img5Gallery2 from '../images/sandwich-5-gallery-2.jpg';
+import img6Gallery1 from '../images/sandwich-6-gallery-1.jpg';
+import img6Gallery2 from '../images/sandwich-6-gallery-2.jpg';
+import img7Gallery1 from '../images/sandwich-7-gallery-1.jpg';
+import img7Gallery2 from '../images/sandwich-7-gallery-2.jpg';
+import img8Gallery1 from '../images/sandwich-8-gallery-1.jpg';
+import img8Gallery2 from '../images/sandwich-8-gallery-2.jpg';
+import img9Gallery1 from '../images/sandwich-9-gallery-1.jpg';
+import img9Gallery2 from '../images/sandwich-9-gallery-2.jpg';
+import img9Gallery3 from '../images/sandwich-9-gallery-3.jpg';
+import img10Gallery1 from '../images/sandwich-10-gallery-1.jpg';
+import img10Gallery2 from '../images/sandwich-10-gallery-2.jpg';
+
 export const categories = [
   { id: 'all', name: 'Все', icon: '' },
   { id: 'chicken', name: 'Куриные', icon: '' },
@@ -23,7 +59,7 @@ export const menuItems = [
     description: 'Ветчина, салями, моцарелла, томаты, руккола, оливковое масло',
     price: 349,
     oldPrice: 399,
-    image: 'https://picsum.photos/seed/sandwich1/400/300',
+    image: img1Main,
     category: 'meat',
     isPopular: true,
     isSale: true,
@@ -38,7 +74,7 @@ export const menuItems = [
     description: 'Куриная грудка, бекон, чеддер, лук, соус BBQ',
     price: 379,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich2/400/300',
+    image: img2Main,
     category: 'chicken',
     isPopular: true,
     isSale: false,
@@ -53,7 +89,7 @@ export const menuItems = [
     description: 'Тунец, кукуруза, огурцы, сливочный сыр, салат',
     price: 399,
     oldPrice: 449,
-    image: 'https://picsum.photos/seed/sandwich3/400/300',
+    image: img3Main,
     category: 'fish',
     isPopular: true,
     isSale: true,
@@ -68,7 +104,7 @@ export const menuItems = [
     description: 'Авокадо, томаты, огурцы, хумус, шпинат, цельнозерновой хлеб',
     price: 329,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich4/400/300',
+    image: img4Main,
     category: 'vegetarian',
     isPopular: true,
     isSale: false,
@@ -83,7 +119,7 @@ export const menuItems = [
     description: 'Говядина, бекон, яйцо, чеддер, картофель фри внутри',
     price: 449,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich5/400/300',
+    image: img5Main,
     category: 'meat',
     isPopular: true,
     isSale: false,
@@ -99,7 +135,7 @@ export const menuItems = [
     description: 'Халапеньо, чоризо, хаварти, гуакамоле, сальса',
     price: 419,
     oldPrice: 469,
-    image: 'https://picsum.photos/seed/sandwich6/400/300',
+    image: img6Main,
     category: 'meat',
     isPopular: false,
     isSale: true,
@@ -114,7 +150,7 @@ export const menuItems = [
     description: 'Куриное филе, салат ромэн, пармезан, сухарики, соус цезарь',
     price: 369,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich7/400/300',
+    image: img7Main,
     category: 'chicken',
     isPopular: false,
     isSale: false,
@@ -129,7 +165,7 @@ export const menuItems = [
     description: 'Шампиньоны, сливочный сыр, лук, тимьян, моцарелла',
     price: 339,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich8/400/300',
+    image: img8Main,
     category: 'vegetarian',
     isPopular: false,
     isSale: false,
@@ -144,7 +180,7 @@ export const menuItems = [
     description: 'Слабосолёный лосось, сливочный сыр, авокадо, огурец, икра',
     price: 549,
     oldPrice: 599,
-    image: 'https://picsum.photos/seed/sandwich9/400/300',
+    image: img9Main,
     category: 'fish',
     isPopular: false,
     isSale: true,
@@ -159,7 +195,7 @@ export const menuItems = [
     description: 'Моцарелла буффало, томаты, базилик, бальзамик, оливковое масло',
     price: 359,
     oldPrice: null,
-    image: 'https://picsum.photos/seed/sandwich10/400/300',
+    image: img10Main,
     category: 'vegetarian',
     isPopular: false,
     isSale: false,
@@ -252,47 +288,14 @@ export const productReviews = {
 
 // Дополнительные изображения для галереи
 export const productGallery = {
-  1: [
-    'https://picsum.photos/seed/sandwich1/800/600',
-    'https://picsum.photos/seed/sandwich1-2/800/600',
-    'https://picsum.photos/seed/sandwich1-3/800/600'
-  ],
-  2: [
-    'https://picsum.photos/seed/sandwich2/800/600',
-    'https://picsum.photos/seed/sandwich2-2/800/600'
-  ],
-  3: [
-    'https://picsum.photos/seed/sandwich3/800/600',
-    'https://picsum.photos/seed/sandwich3-2/800/600',
-    'https://picsum.photos/seed/sandwich3-3/800/600'
-  ],
-  4: [
-    'https://picsum.photos/seed/sandwich4/800/600',
-    'https://picsum.photos/seed/sandwich4-2/800/600'
-  ],
-  5: [
-    'https://picsum.photos/seed/sandwich5/800/600',
-    'https://picsum.photos/seed/sandwich5-2/800/600'
-  ],
-  6: [
-    'https://picsum.photos/seed/sandwich6/800/600',
-    'https://picsum.photos/seed/sandwich6-2/800/600'
-  ],
-  7: [
-    'https://picsum.photos/seed/sandwich7/800/600',
-    'https://picsum.photos/seed/sandwich7-2/800/600'
-  ],
-  8: [
-    'https://picsum.photos/seed/sandwich8/800/600',
-    'https://picsum.photos/seed/sandwich8-2/800/600'
-  ],
-  9: [
-    'https://picsum.photos/seed/sandwich9/800/600',
-    'https://picsum.photos/seed/sandwich9-2/800/600',
-    'https://picsum.photos/seed/sandwich9-3/800/600'
-  ],
-  10: [
-    'https://picsum.photos/seed/sandwich10/800/600',
-    'https://picsum.photos/seed/sandwich10-2/800/600'
-  ]
+  1: [img1Gallery1, img1Gallery2, img1Gallery3],
+  2: [img2Gallery1, img2Gallery2],
+  3: [img3Gallery1, img3Gallery2, img3Gallery3],
+  4: [img4Gallery1, img4Gallery2],
+  5: [img5Gallery1, img5Gallery2],
+  6: [img6Gallery1, img6Gallery2],
+  7: [img7Gallery1, img7Gallery2],
+  8: [img8Gallery1, img8Gallery2],
+  9: [img9Gallery1, img9Gallery2, img9Gallery3],
+  10: [img10Gallery1, img10Gallery2]
 };
